@@ -25,9 +25,9 @@ header {
 }
 
 .logo-container,
-.nav-links,
-.cart {
+.nav-links {
   display: flex;
+  margin-top: 20px;
 }
 
 .logo-container {
@@ -36,15 +36,15 @@ header {
 }
 
 .logo {
-  font-weight: 400;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 26px;
   /* letter-spacing: 1px; */
   margin: 6px;
   color: #494964;
 }
 
 .logo-container img {
-  width: 45px;
+  width: 55px;
 }
 
 nav {
@@ -53,17 +53,19 @@ nav {
 
 .contactBtn {
   flex: 1;
+  margin-top: 20px;
   justify-content: flex-end;
 }
 .contactBtn button {
   background: #494964;
-  width: 150px;
-  height: 50px;
+  width: 180px;
+  height: 65px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   border: none;
   color: white;
   margin: 0px 0px 0px 30px;
+  border-radius: 30px;
 }
 
 .nav-links {
@@ -73,7 +75,8 @@ nav {
 
 .nav-link {
   color: #5f5f79;
-  font-size: 16px;
+  font-weight: 200;
+  font-size: 20px;
   text-decoration: none;
   transition: color 0.3s, border-bottom 0.3s;
 }
@@ -100,8 +103,8 @@ nav {
 }
 
 .intro-text h1 {
-  font-size: 42px;
-  font-weight: 500;
+  font-size: 55px;
+  font-weight: 600;
   line-height: 120%;
   background: linear-gradient(to right, #494964, #6f6f89);
   -webkit-background-clip: text;
@@ -120,16 +123,13 @@ nav {
 
 .cta-select {
   color: white;
-  width: 150px;
-  height: 50px;
+  width: 180px;
+  height: 65px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   background: #494964;
-  width: 150px;
-  height: 50px;
-  cursor: pointer;
-  font-size: 16px;
   border: none;
+  border-radius: 30px;
 }
 
 .cta-add {
@@ -151,7 +151,7 @@ nav {
 .footer {
   display: flex;
   width: 100%;
-  margin-top: 3%;
+  /* margin-top: 3%; */
   padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
@@ -376,13 +376,14 @@ nav {
   color: #585772;
 }
 .about-container {
-  background: #262635;
+  display: flex;
+  /* background: #7a7a7c; */
+  background: rgb(38, 38, 38);
+  /* background: #262635; */
+  justify-content: center;
   height: auto;
 }
-.about-container {
-  display: flex;
-  justify-content: center;
-}
+
 .about-container img {
   position: relative;
   max-width: 100%;
@@ -397,13 +398,53 @@ nav {
 }
 .about-container p {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200;
   text-overflow: clip;
   text-align: left;
   padding-right: 10%;
-  padding-top: 6%;
   padding-bottom: 30px;
+}
+.about-container div {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 3%;
+}
+.aboutText h2 {
+  padding-bottom: 15px;
+}
+
+                          /* cards */
+
+.service {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 400px;
+}
+
+.card i {
+  /* font-size: 48px;
+  color: #3498db;
+  margin-bottom: 10px; */
+}
+
+.card h2 {
+  font-size: 24px;
+  margin: 0;
 }
 
 .cover img {
