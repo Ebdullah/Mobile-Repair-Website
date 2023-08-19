@@ -52,7 +52,9 @@
             </div>
           </div>
           <div class="cta">
-            <button class="cta-select">Learn More >></button>
+            <button class="cta-select" onclick="navigateToAboutPage()">
+              Find More About US >>
+            </button>
           </div>
         </div>
         <div class="cover">
@@ -65,7 +67,7 @@
         <div class="about-container">
           <img src="./img/hawkMobile.png" alt="img" />
           <div class="aboutText">
-            <h2>About Us</h2>
+            <h1>About Us</h1>
             <p>
               Hawk Mobile is the ultimate destination for all things mobile and
               laptop-related. We offer a comprehensive array of products and
@@ -82,22 +84,38 @@
             </p>
           </div>
         </div>
-
-        <div class="service">
-          <div class="card">
-            <i class="fas fa-icon"></i>
-            <h2>Mobile Repair</h2>
-            <p>We have all kind of acessories for your mobile and laptop.</p>
+        <div class="service-container">
+          <div class="service">
+            <div class="card">
+              <img src="./img/repair_7213508.png" alt="icon" />
+              <h2>Mobile Repair</h2>
+              <p>
+                Your one-stop solution for mobile phone repairs. We specialize
+                in fixing a wide range of issues for both iPhones and Android
+                devices.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./img/gadget_5029386.png" alt="icon" />
+              <h2>Mobile And Laptop Acessories</h2>
+              <p>
+                We offer a wide range of accessories suitable for both older and
+                newer models of mobile phones and laptops.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./img/desktop_5511843.png" alt="icon" />
+              <h2>Laptop Repair</h2>
+              <p>
+                We specialize in providing solutions for both hardware and
+                software issues related to laptop repairs.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fas fa-icon"></i>
-            <h2>Mobile And Laptop Acessories</h2>
-            <p>We have all kind of acessories for your mobile and laptop.</p>
-          </div>
-          <div class="card">
-            <i class="fas fa-icon"></i>
-            <h2>Laptop Repair</h2>
-            <p>We have all kind of acessories for your mobile and laptop.</p>
+          <div class="serviceBtn">
+            <button type="button" onclick="navigateToServicePage()">
+              View All >>
+            </button>
           </div>
         </div>
       </section>
@@ -153,6 +171,12 @@
     <script>
       function navigateToContactPage() {
         window.location.href = "contactus.html";
+      }
+      function navigateToServicePage() {
+        window.location.href = "services.html";
+      }
+      function navigateToAboutPage() {
+        window.location.href = "aboutus.html";
       }
     </script>
   </body>

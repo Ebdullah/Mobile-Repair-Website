@@ -37,14 +37,14 @@ header {
 
 .logo {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 35px;
   /* letter-spacing: 1px; */
   margin: 6px;
   color: #494964;
 }
 
 .logo-container img {
-  width: 55px;
+  width: 75px;
 }
 
 nav {
@@ -57,11 +57,11 @@ nav {
   justify-content: flex-end;
 }
 .contactBtn button {
-  background: #494964;
-  width: 180px;
+  background: #262635;
+  width: 200px;
   height: 65px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 22px;
   border: none;
   color: white;
   margin: 0px 0px 0px 30px;
@@ -76,7 +76,7 @@ nav {
 .nav-link {
   color: #5f5f79;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 26px;
   text-decoration: none;
   transition: color 0.3s, border-bottom 0.3s;
 }
@@ -89,7 +89,7 @@ nav {
 
 .presentation {
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: auto;
   min-height: 90vh;
   padding-left: 10%;
@@ -123,24 +123,13 @@ nav {
 
 .cta-select {
   color: white;
-  width: 180px;
+  width: 295px;
   height: 65px;
   cursor: pointer;
-  font-size: 20px;
-  background: #494964;
+  font-size: 22px;
+  background: #262635;
   border: none;
   border-radius: 30px;
-}
-
-.cta-add {
-  background: #7fa1e5;
-  width: 150px;
-  height: 50px;
-  cursor: pointer;
-  font-size: 16px;
-  border: none;
-  color: white;
-  margin: 0px 0px 0px 30px;
 }
 
 .cover {
@@ -151,14 +140,12 @@ nav {
 .footer {
   display: flex;
   width: 100%;
-  /* margin-top: 3%; */
   padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 3%;
   color: white;
   background-color: #262635;
-  /* align-items: center; */
 }
 .footer div {
   text-align: center;
@@ -167,17 +154,13 @@ nav {
   margin-top: 15px;
 }
 .icons i {
-  font-size: 28px;
+  font-size: 35px;
   margin: 8px;
   cursor: pointer;
 }
-/* .icons img {
-  width: 45px;
-  padding-left: 10px;
-  -webkit-filter: invert(100%);
-}  */
 .footer div h3 {
   font-weight: 300;
+  font-size: 26px;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
@@ -195,7 +178,8 @@ nav {
   text-decoration: none;
 }
 .f-nav-link {
-  font-size: 18px;
+  font-size: 22px;
+  margin-left: 120px;
 }
 .space-container {
   margin-left: 25px;
@@ -209,7 +193,6 @@ nav {
   height: 40px;
   border-radius: 4px;
   text-align: center;
-  /* margin-top: 20px; */
   margin-bottom: 40px;
   outline: none;
   border: none;
@@ -231,12 +214,11 @@ nav {
   justify-content: center;
 }
 .logo-container img {
-  width: 55px;
+  width: 65px;
 }
 .f-logo {
   font-weight: 400;
-  font-size: 22px;
-  /* letter-spacing: 1px; */
+  font-size: 28px;
   margin: 6px;
   color: white;
   padding-left: 5px;
@@ -244,16 +226,16 @@ nav {
 .copyrights {
   background-color: #161620;
   color: white;
-  height: 30px;
+  height: 50px;
   align-items: center;
   justify-content: center;
-  /* padding: 20%,1%,20%,1%; */
   padding-left: 38%;
   padding-top: 0.3%;
   padding-bottom: 0.5%;
 }
 .copyrights p {
-  font-size: 14px;
+  font-size: 18px;
+  padding-bottom: 7px;
   font-weight: 100;
   align-items: center;
   justify-content: center;
@@ -279,8 +261,8 @@ nav {
 }
 
 .c-intro-text h1 {
-  font-size: 42px;
-  font-weight: 500;
+  font-size: 44px;
+  font-weight: 600;
   line-height: 120%;
   background: linear-gradient(to right, #494964, #6f6f89);
   -webkit-background-clip: text;
@@ -292,19 +274,20 @@ nav {
   font-size: 19px;
   color: #585772;
   margin-bottom: 10px;
-  /* margin-right: -60px; */
 }
 .f1-input {
   width: 32%;
   margin-top: 25px;
   border-radius: 4px;
   border: none;
+  height: 60px;
   background-color: whitesmoke;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 13px;
   padding-bottom: 13px;
   margin-right: 2px;
+  font-size: 18px;
 }
 .f2-input {
   margin-top: 8px;
@@ -315,6 +298,8 @@ nav {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 13px;
+  height: 60px;
+  font-size: 18px;
   padding-bottom: 13px;
   margin-right: 2px;
 }
@@ -326,6 +311,8 @@ nav {
   border: none;
   padding-left: 15px;
   padding-right: 15px;
+  height: 150px;
+  font-size: 18px;
   padding-top: 13px;
   padding-bottom: 13px;
   background-color: whitesmoke;
@@ -336,6 +323,7 @@ nav {
 }
 .address h3 {
   background: linear-gradient(to right, #494964, #6f6f89);
+  font-size: 26px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #494964;
@@ -350,7 +338,7 @@ nav {
 }
 .addressText p {
   margin-top: 5px;
-  font-size: 15px;
+  font-size: 18px;
   color: #585772;
 }
 .Contact {
@@ -361,6 +349,7 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #494964;
+  font-size: 26px;
 }
 .emailAddress {
   margin-top: 7px;
@@ -372,11 +361,12 @@ nav {
 }
 .emailAddress p {
   margin-top: 5px;
-  font-size: 15px;
+  font-size: 18px;
   color: #585772;
 }
 .about-container {
   display: flex;
+  padding: 20px;
   /* background: #7a7a7c; */
   background: rgb(38, 38, 38);
   /* background: #262635; */
@@ -398,7 +388,7 @@ nav {
 }
 .about-container p {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 200;
   text-overflow: clip;
   text-align: left;
@@ -412,12 +402,16 @@ nav {
   text-align: left;
   padding-top: 3%;
 }
-.aboutText h2 {
-  padding-bottom: 15px;
+.about-container h1 {
+  padding-bottom: 25px;
 }
 
-                          /* cards */
-
+/* cards */
+.service-container {
+  background-color: #f4f4f4;
+  max-height: 100vh;
+  padding: 70px;
+}
 .service {
   display: flex;
   justify-content: space-around;
@@ -425,26 +419,46 @@ nav {
   padding: 20px;
   background-color: #f4f4f4;
 }
-
+.serviceBtn {
+  flex: 1;
+  margin-top: 20px;
+  text-align: center;
+}
+.serviceBtn button {
+  background: #262635;
+  width: 200px;
+  height: 65px;
+  cursor: pointer;
+  font-size: 22px;
+  border: none;
+  color: white;
+  margin: 0px 0px 0px 30px;
+  border-radius: 30px;
+}
 .card {
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   width: 30%;
   height: 400px;
 }
-
-.card i {
-  /* font-size: 48px;
-  color: #3498db;
-  margin-bottom: 10px; */
+.card img {
+  width: 28%;
+  margin-top: 20px;
+  opacity: 0.7;
 }
 
 .card h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin: 0;
+  margin-top: 30px;
+  color: #494964;
+}
+.crad p {
+  font-size: 18px;
+  color: #494964;
 }
 
 .cover img {
@@ -455,7 +469,7 @@ nav {
 }
 .times {
   margin-top: 5px;
-  font-size: 15px;
+  font-size: 18px;
   color: #585772;
 }
 #phone {
