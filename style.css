@@ -298,7 +298,7 @@ nav {
   padding-bottom: 13px;
   margin-right: 2px;
 }
-.f3-input {
+#f3-input {
   margin-top: 8px;
   width: 65.3%;
   height: 80px;
@@ -307,7 +307,9 @@ nav {
   padding-left: 15px;
   padding-right: 15px;
   height: 150px;
+  font-family: Poppins;
   font-size: 18px;
+  justify-content: center;
   padding-top: 13px;
   padding-bottom: 13px;
   background-color: whitesmoke;
@@ -400,8 +402,20 @@ nav {
 /* cards */
 .service-container {
   background-color: #f4f4f4;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   padding: 70px;
+}
+.headingServices {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.headingServices h1 {
+  font-size: 45px;
+  color: #494964;
+}
+.headingServices p {
+  font-size: 18px;
+  color: #585772;
 }
 .service {
   display: flex;

@@ -1,173 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/87d4c7abca.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Hawk Mobiles</title>
-  </head>
 
-  <body>
-    <!-- Nav Bar -->
-    <header>
-      <div class="logo-container">
-        <img src="./img/hawkLogo.png" alt="logo" />
-        <h4 class="logo">Hawk Mobile</h4>
-      </div>
-      <nav class="nav">
-        <ul class="nav-links">
-          <li><a class="nav-link" href="./index.html">Home</a></li>
-          <li><a class="nav-link" href="./aboutus.html">About Us</a></li>
-          <li><a class="nav-link" href="./services.html">Services</a></li>
-        </ul>
-      </nav>
-      <div class="contactBtn">
-        <button type="button" onclick="navigateToContactPage()">
-          Contact Us
-        </button>
-      </div>
-    </header>
-    <main>
-      <!-- Banner -->
-      <section class="c-presentation">
-        <div class="c-introduction">
-          <div class="c-intro-text">
-            <div id="heading">
-              <h1>Contact Us</h1>
-              <p>Send us a message and we will get to you shortly.</p>
-            </div>
-          </div>
-          <form action="index.html">
-            <input
-              class="f1-input"
-              type="text"
-              required
-              placeholder="First Name"
-            />
-            <input
-              class="f1-input"
-              type="text"
-              required
-              placeholder="Last Name"
-            />
-            <br />
-            <input
-              class="f2-input"
-              type="email"
-              required
-              placeholder="Enter your Email"
-            />
-            <input
-              class="f2-input"
-              type="text"
-              required
-              placeholder="Enter your Phone Number"
-            />
-            <br />
-            <input
-              class="f3-input"
-              type="text"
-              required
-              placeholder="Your Message"
-            />
-            <div class="cta">
-              <button class="cta-select">Submit Now</button>
-            </div>
-          </form>
-        </div>
-        <div class="information">
-          <div class="address">
-            <h3>Our Address</h3>
-          </div>
-          <div class="addressText">
-            <i class="fa-solid fa-location-dot" style="color: #494f5b"></i>
-            <p>2750 Faithfull Ave #205, Saskatoon, SK S7K 6M6, Canada</p>
-          </div>
-          <div class="Contact">
-            <h3>Contact Information</h3>
-          </div>
-          <div class="addressText">
-            <i class="fa-solid fa-phone" style="color: #494f5b"></i>
-            <p>+1 306-974-3131</p>
-          </div>
-          <div class="emailAddress">
-            <i class="fa-solid fa-envelope" style="color: #494f5b"></i>
-            <p>info@hawkmobile.ca</p>
-          </div>
-          <div class="Contact">
-            <h3>Our Timmings</h3>
-          </div>
-          <li class="times">Opens 5 Days A Week</li>
-          <li class="times">From 9:00 am to 8:00 pm</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/87d4c7abca.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+  <title>Hawk Mobiles</title>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <header>
+    <div class="logo-container">
+      <img src="./img/hawkLogo.png" alt="logo" />
+      <h4 class="logo">Hawk Mobile</h4>
+    </div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="./index.html">Home</a></li>
+        <li><a class="nav-link" href="./aboutus.html">About Us</a></li>
+        <li><a class="nav-link" href="./services.html">Services</a></li>
+      </ul>
+    </nav>
+    <div class="contactBtn">
+      <button type="button" onclick="navigateToContactPage()">
+        Contact Us
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- Banner -->
+    <section class="c-presentation">
+      <div class="c-introduction">
+        <div class="c-intro-text">
+          <div id="heading">
+            <h1>Contact Us</h1>
+            <p>Send us a message and we will get to you shortly.</p>
           </div>
         </div>
-      </section>
+        <form action="index.html" onsubmit="sendEmail(); reset(); return false;">
+          <input class="f1-input" type="text" required placeholder="First Name" />
+          <input class="f1-input" type="text" required placeholder="Last Name" />
+          <br />
+          <input class="f2-input" id="email" type="email" required placeholder="Enter your Email" />
+          <input class="f2-input" id="phone1" type="text" required placeholder="Enter your Phone Number" />
+          <br />
+          <textarea placeholder="Your Message" id="f3-input" cols="30" rows="10"></textarea>
+          <div class="cta">
+            <button class="cta-select">Submit Now</button>
+          </div>
+        </form>
+      </div>
+      <div class="information">
+        <div class="address">
+          <h3>Our Address</h3>
+        </div>
+        <div class="addressText">
+          <i class="fa-solid fa-location-dot" style="color: #494f5b"></i>
+          <p>2750 Faithfull Ave #205, Saskatoon, SK S7K 6M6, Canada</p>
+        </div>
+        <div class="Contact">
+          <h3>Contact Information</h3>
+        </div>
+        <div class="addressText">
+          <i class="fa-solid fa-phone" style="color: #494f5b"></i>
+          <p>+1 306-974-3131</p>
+        </div>
+        <div class="emailAddress">
+          <i class="fa-solid fa-envelope" style="color: #494f5b"></i>
+          <p>info@hawkmobile.ca</p>
+        </div>
+        <div class="Contact">
+          <h3>Our Timmings</h3>
+        </div>
+        <li class="times">Opens 5 Days A Week</li>
+        <li class="times">From 9:00 am to 8:00 pm</li>
+      </div>
+      </div>
+    </section>
 
-      <section class="footer-container">
-        <div class="footer">
-          <div class="col-1">
-            <div class="logo-container">
-              <img src="./img/hawkLogo.png" alt="logo" />
-              <h4 class="f-logo">Hawk Mobile</h4>
-            </div>
-            <div class="icons">
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-whatsapp"></i>
-              <!-- <img src="./img/facebook.png" alt="icon" />
+    <section class="footer-container">
+      <div class="footer">
+        <div class="col-1">
+          <div class="logo-container">
+            <img src="./img/hawkLogo.png" alt="logo" />
+            <h4 class="f-logo">Hawk Mobile</h4>
+          </div>
+          <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>
+            <!-- <img src="./img/facebook.png" alt="icon" />
               <img src="./img/whatsapp.png" alt="icon" />
               <img src="./img/instagram.png" alt="icon" />
               <img src="./img/twitter.png" alt="icon" /> -->
-            </div>
           </div>
-          <div class="col-2">
-            <div>
-              <a class="f-nav-link" href="./aboutus.html">About Us</a>
-              <a class="f-nav-link" href="./services.html">Services</a>
-            </div>
-            <div class="space-container"></div>
-            <div>
-              <a class="f-nav-link" href="./contactus.html">Contact Us</a>
-              <a class="f-nav-link" href="./index.html">Home</a>
-            </div>
+        </div>
+        <div class="col-2">
+          <div>
+            <a class="f-nav-link" href="./aboutus.html">About Us</a>
+            <a class="f-nav-link" href="./services.html">Services</a>
           </div>
+          <div class="space-container"></div>
+          <div>
+            <a class="f-nav-link" href="./contactus.html">Contact Us</a>
+            <a class="f-nav-link" href="./index.html">Home</a>
+          </div>
+        </div>
 
-          <div class="col-3">
-            <h3>Subscribe Our NewsLetter</h3>
-            <form class="f-form">
-              <input type="email" placeholder="Your Email Address" required />
-              <button type="submit">Subscribe</button>
-            </form>
-            <!-- <h3>Contact Info</h3>
+        <div class="col-3">
+          <h3>Subscribe Our NewsLetter</h3>
+          <form class="f-form">
+            <input type="email" placeholder="Your Email Address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <!-- <h3>Contact Info</h3>
             <p>+1 306 974 3131</p>
             <p>hawkmobile1@gmail.com</p>
             <p>205-2750 faithful ave, Saskatoon,</p>
             <p>SK, Canada, Saskatchewan</p> -->
-          </div>
         </div>
-      </section>
-      <div class="copyrights">
-        <p>Copyrights 2023. All Rights Reserved by Hawk Mobile</p>
       </div>
+    </section>
+    <div class="copyrights">
+      <p>Copyrights 2023. All Rights Reserved by Hawk Mobile</p>
+    </div>
 
-      <img src="./img/crc-08.png" alt="" class="mid" />
-      <img src="./img/crc-09.png" alt="" class="big" />
-      <img src="./img/crc-07.png" alt="" class="small" />
-    </main>
-    <script>
-      function navigateToContactPage() {
-        window.location.href = "contactus.html";
-      }
-    </script>
-  </body>
+    <img src="./img/crc-08.png" alt="" class="mid" />
+    <img src="./img/crc-09.png" alt="" class="big" />
+    <img src="./img/crc-07.png" alt="" class="small" />
+  </main>
+  <script>
+    function navigateToContactPage() {
+      window.location.href = "contactus.html";
+    }
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "abdullah.shahid@mslm.io",
+        Password: "124810596a@",
+        To: 'abdullah.shahid@mslm.io',
+        From: document.getElementById("email").value,
+        Subject: "New Contact Form Enquiry",
+        Body: "Name: " + document.getElementsByClassName('f1-input').value
+          + "<br> Email: " + document.getElementsById('email').value
+          + "<br> Phone no.: " + document.getElementsById('phone1').value
+          + "<br> Email: " + document.getElementsById('f3-input').value
+      }).then(
+        message => alert("Succesful")
+      );
+    }
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
 </html>
